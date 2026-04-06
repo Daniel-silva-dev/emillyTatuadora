@@ -20,7 +20,6 @@ import arte3 from "../imagens/arte3.jpg";
 import arte4 from "../imagens/arte4.jpg";
 import arte5 from "../imagens/arte5.jpg";
 import arte6 from "../imagens/arte6.jpg";
-import arte7 from "../imagens/arte7.jpg";
 
 
 export default function Tattos() {
@@ -49,7 +48,6 @@ export default function Tattos() {
     arte4,
     arte5,
     arte6,
-    arte7,
   ];
   
 
