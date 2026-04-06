@@ -9,10 +9,10 @@ export default function Header() {
   return (
     <header className="header">
       <div className="logo">
-        Emilly
+        Emilly Agostinho
       </div>
         <nav className={menuOpen ? "nav active" : "nav"}>
-          <Link to="/" onClick={() => setMenuOpen(false)}>Home</Link>
+          <Link to="/" onClick={() => setMenuOpen(false)}>Inicio</Link>
           <Link to="/about" onClick={() => setMenuOpen(false)}>Sobre mim</Link>
           <Link to="/tattos" onClick={() => setMenuOpen(false)}>Tattos</Link>
           <Link to="/contact" onClick={() => setMenuOpen(false)}>Contato</Link>
