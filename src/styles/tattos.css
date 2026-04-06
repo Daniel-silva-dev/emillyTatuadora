@@ -1,0 +1,60 @@
+/* ================= */
+/* BASE (MOBILE) */
+/* ================= */
+
+.tattos {
+  padding: 80px 20px;
+  background: #0f0f0f;
+  color: white;
+}
+
+.tattos-title {
+  font-size: 1.8rem;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+/* GRID AUTOMÁTICO */
+.tattos-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+}
+
+/* CARD */
+.tattos-card {
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+/* IMAGEM */
+.tattos-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  display: block;
+  transition: 0.3s;
+}
+
+/* ================= */
+/* TABLET */
+/* ================= */
+@media (min-width: 600px) {
+  .tattos-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ================= */
+/* DESKTOP */
+/* ================= */
+@media (min-width: 1024px) {
+  .tattos-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+
+  /* HOVER */
+  .tattos-card:hover img {
+    transform: scale(1.05);
+  }
+}

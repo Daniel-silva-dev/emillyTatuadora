@@ -1,0 +1,121 @@
+/* ================= */
+/* 📱 MOBILE (BASE) */
+/* ================= */
+
+.hero {
+  min-height: 100vh;
+  background: url("../imagens/banner1.jpg")
+    center/cover no-repeat;
+  margin-top: 70px;
+
+  display: flex;
+}
+
+.hero-overlay {
+  width: 100%;
+  min-height: 100vh;
+
+  background: rgba(0, 0, 0, 0.7);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 20px;
+}
+
+.hero-content {
+  width: 100%;
+  max-width: 500px;
+  color: white;
+
+  text-align: center;
+}
+
+/* título */
+.hero-content h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.hero-content h1 span {
+  font-weight: 300;
+}
+
+/* texto */
+.hero-content p {
+  margin: 20px 0;
+  color: #ccc;
+  line-height: 1.5;
+}
+
+/* botões */
+.hero-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+
+.hero-buttons a {
+  width: 100%;
+  padding: 12px;
+  text-align: center;
+
+  border-radius: 5px;
+  text-decoration: none;
+
+  transition: 0.3s;
+}
+
+/* estilos */
+.btn-primary {
+  background: #6c2bd9;
+  color: white;
+}
+
+.btn-outline {
+  border: 1px solid white;
+  color: white;
+}
+
+/* ================= */
+/* 💻 TABLET+ */
+/* ================= */
+@media (min-width: 768px) {
+
+  .hero-content {
+    text-align: left;
+    max-width: 600px;
+  }
+
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-buttons {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .hero-buttons a {
+    width: auto;
+    min-width: 150px;
+  }
+}
+
+/* ================= */
+/* 🖥️ DESKTOP */
+/* ================= */
+@media (min-width: 1024px) {
+
+  .hero-content h1 {
+    font-size: 3rem;
+  }
+
+  .hero-overlay {
+    justify-content: flex-start;
+    padding-left: 80px;
+  }
+}

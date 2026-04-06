@@ -1,0 +1,32 @@
+/* RESET BASE */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ROOT */
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+/* BODY CORRIGIDO */
+body {
+  min-width: 320px;
+  min-height: 100vh;
+
+  background-color: #111;
+  color: white;
+}
+
+/* LINKS */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* IMAGENS RESPONSIVAS */
+img {
+  max-width: 100%;
+  display: block;
+}

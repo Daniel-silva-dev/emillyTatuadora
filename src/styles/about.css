@@ -1,0 +1,98 @@
+/* ================= */
+/* BASE (MOBILE) */
+/* ================= */
+
+.about {
+  padding: 60px 20px;
+  background: #111;
+  color: white;
+}
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+/* TEXTO */
+.about-text h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+.about-text p {
+  color: #ccc;
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+/* destaque */
+.destaque {
+  color: white;
+  font-weight: bold;
+}
+
+/* INFO */
+.about-info {
+  background: #1a1a1a;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.about-info h3 {
+  margin-bottom: 10px;
+}
+
+/* listas */
+.about-info ul {
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+.about-info li {
+  margin-bottom: 8px;
+  color: #ccc;
+}
+
+/* serviços */
+.services li {
+  background: #6c2bd9;
+  padding: 8px;
+  border-radius: 5px;
+  text-align: center;
+  color: white;
+  margin-bottom: 8px;
+}
+
+/* ================= */
+/* TABLET */
+/* ================= */
+@media (min-width: 768px) {
+
+  .about-container {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .about-text {
+    flex: 2;
+  }
+
+  .about-info {
+    flex: 1;
+  }
+}
+
+/* ================= */
+/* DESKTOP */
+/* ================= */
+@media (min-width: 1024px) {
+
+  .about {
+    padding: 80px;
+  }
+
+  .about-text h2 {
+    font-size: 2.2rem;
+  }
+}

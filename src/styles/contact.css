@@ -1,0 +1,96 @@
+/* ================= */
+/* BASE */
+/* ================= */
+
+.contact {
+  height: 100vh;
+  background: url("../imagens/banner3.jpg")
+    center/cover no-repeat;
+  position: relative;
+  margin-top: 70px;
+}
+
+/* OVERLAY */
+.contact-overlay {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.75);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* CONTEÚDO */
+.contact-content {
+  text-align: center;
+  color: white;
+  padding: 20px;
+}
+
+.contact-content h2 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.contact-content p {
+  color: #ccc;
+  margin-bottom: 30px;
+}
+
+/* LINKS */
+.contact-links {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* BOTÕES */
+.contact-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  padding: 12px;
+  border-radius: 8px;
+
+  text-decoration: none;
+  color: white;
+
+  background: #6c2bd9;
+  transition: 0.3s;
+}
+
+.contact-btn:hover {
+  background: #5a21b6;
+}
+
+/* ================= */
+/* TABLET */
+/* ================= */
+@media (min-width: 600px) {
+
+  .contact-links {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .contact-btn {
+    min-width: 150px;
+  }
+}
+
+/* ================= */
+/* DESKTOP */
+/* ================= */
+@media (min-width: 1024px) {
+
+  .contact-content h2 {
+    font-size: 2.2rem;
+  }
+
+  .contact-btn:hover {
+    transform: scale(1.05);
+  }
+}
